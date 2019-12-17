@@ -1,11 +1,17 @@
 import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello Horologii!</h1>
-    </div>
-  );
-}
+import Routes from './routes';
+
+import "./styles.css";
+
+import Header from './components/Header';
+import Main from './pages/main';
+
+const App = () => (
+  <div className="App">
+    <Header />
+    <Routes />
+  </div>
+);
 
 export default App;
